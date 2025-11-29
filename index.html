@@ -1,599 +1,599 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>وكالة أحمد للتصميم | إعلانات، شعارات، وهويات بصرية</title>
-    <meta name="description" content="وكالة أحمد للتصميم تقدم حلولاً جرافيكية وإعلانية احترافية، متخصصة في الشعارات، الهويات البصرية، وتصاميم السوشيال ميديا القوية." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>وكالة أحمد للتصميم | إعلانات، شعارات، وهويات بصرية</title>
+    <meta name="description" content="وكالة أحمد للتصميم تقدم حلولاً جرافيكية وإعلانية احترافية، متخصصة في الشعارات، الهويات البصرية، وتصاميم السوشيال ميديا القوية." />
 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-        /* ==================================== */
-        /* 1. القواعد الأساسية والثيمات */
-        /* ==================================== */
-        :root {
-            /* ألوان احترافية (Corporate & Modern) */
-            --primary-color: #0d6efd; /* أزرق نقي */
-            --secondary-color: #17a2b8; /* سماوي/تركيز */
-            --accent-color: #6610f2; /* بنفسجي عميق */
-            --light-bg: #ffffff; 
-            --dark-bg: #0a0a0a;
-            --text-light: #212529;
-            --text-dark: #f8f9fa;
-        }
+    <style>
+        /* ==================================== */
+        /* 1. القواعد الأساسية والثيمات */
+        /* ==================================== */
+        :root {
+            /* ألوان احترافية (Corporate & Modern) */
+            --primary-color: #0d6efd; /* أزرق نقي */
+            --secondary-color: #17a2b8; /* سماوي/تركيز */
+            --accent-color: #6610f2; /* بنفسجي عميق */
+            --light-bg: #ffffff; 
+            --dark-bg: #0a0a0a;
+            --text-light: #212529;
+            --text-dark: #f8f9fa;
+        }
 
-        /* RESET */
-        * {margin:0; padding:0; box-sizing:border-box; font-family:'Cairo', sans-serif;}
-        body {
-            background:var(--light-bg); 
-            color:var(--text-light); 
-            transition:background 0.6s ease, color 0.6s ease;
-            line-height:1.7;
-        }
-        html {scroll-behavior:smooth;}
-        section {padding:120px 50px;}
-        a {text-decoration:none;}
+        /* RESET */
+        * {margin:0; padding:0; box-sizing:border-box; font-family:'Cairo', sans-serif;}
+        body {
+            background:var(--light-bg); 
+            color:var(--text-light); 
+            transition:background 0.6s ease, color 0.6s ease;
+            line-height:1.7;
+        }
+        html {scroll-behavior:smooth;}
+        section {padding:120px 50px;}
+        a {text-decoration:none;}
 
-        /* DARK MODE */
-        body.dark {
-            background:var(--dark-bg); 
-            color:var(--text-dark);
-        }
-        body.dark header {
-            background:rgba(10,10,10,0.98); 
-            border-color:#333;
-        }
-        body.dark .hero, body.dark .about {background:var(--dark-bg);}
-        body.dark .service-card, body.dark .work-card {
-            background:#1a1a1a; 
-            box-shadow:0 10px 40px rgba(0,0,0,0.7);
-            border:1px solid #333;
-        }
-        body.dark nav a {color:var(--text-dark);}
-        body.dark .hero-text p, body.dark .services p {color:#ccc;}
-        body.dark footer {background:#000; border-top:1px solid #333;}
-        body.dark .contact-info-item span {color:#ccc;}
-        
+        /* DARK MODE */
+        body.dark {
+            background:var(--dark-bg); 
+            color:var(--text-dark);
+        }
+        body.dark header {
+            background:rgba(10,10,10,0.98); 
+            border-color:#333;
+        }
+        body.dark .hero, body.dark .about {background:var(--dark-bg);}
+        body.dark .service-card, body.dark .work-card {
+            background:#1a1a1a; 
+            box-shadow:0 10px 40px rgba(0,0,0,0.7);
+            border:1px solid #333;
+        }
+        body.dark nav a {color:var(--text-dark);}
+        body.dark .hero-text p, body.dark .services p {color:#ccc;}
+        body.dark footer {background:#000; border-top:1px solid #333;}
+        body.dark .contact-info-item span {color:#ccc;}
+        
 
-        /* Utility Classes */
-        .btn-primary {
-            padding:18px 40px; background:var(--primary-color); color:white;
-            border:none; border-radius:50px; font-size:18px;
-            cursor:pointer; transition:.4s; font-weight:700;
-            letter-spacing:1px; box-shadow:0 8px 20px rgba(13, 109, 253, 0.4);
-        }
-        .btn-primary:hover {transform:translateY(-3px); background:#0056b3; box-shadow:0 12px 25px rgba(13, 109, 253, 0.6);}
-        .btn-secondary {
-            background:#444; color:white; margin-left:20px;
-            padding:18px 40px; border-radius:50px; border:1px solid #777;
-            transition:.3s;
-        }
-        .btn-secondary:hover {background:#000; border-color:#fff;}
-        
-        h2 {text-align:center; font-size:52px; margin-bottom:15px; font-weight:900; color:var(--primary-color);}
-        .section-subtitle {text-align:center; color:#777; font-size:22px; margin-bottom:70px;}
-        body.dark .section-subtitle {color:#bbb;}
+        /* Utility Classes */
+        .btn-primary {
+            padding:18px 40px; background:var(--primary-color); color:white;
+            border:none; border-radius:50px; font-size:18px;
+            cursor:pointer; transition:.4s; font-weight:700;
+            letter-spacing:1px; box-shadow:0 8px 20px rgba(13, 109, 253, 0.4);
+        }
+        .btn-primary:hover {transform:translateY(-3px); background:#0056b3; box-shadow:0 12px 25px rgba(13, 109, 253, 0.6);}
+        .btn-secondary {
+            background:#444; color:white; margin-left:20px;
+            padding:18px 40px; border-radius:50px; border:1px solid #777;
+            transition:.3s;
+        }
+        .btn-secondary:hover {background:#000; border-color:#fff;}
+        
+        h2 {text-align:center; font-size:52px; margin-bottom:15px; font-weight:900; color:var(--primary-color);}
+        .section-subtitle {text-align:center; color:#777; font-size:22px; margin-bottom:70px;}
+        body.dark .section-subtitle {color:#bbb;}
 
-        /* ==================================== */
-        /* 2. HEADER - الوكالة والملاحة */
-        /* ==================================== */
-        header {
-            width:100%; padding:25px 50px;
-            background:rgba(255,255,255,0.98); 
-            display:flex; justify-content:space-between;
-            align-items:center; position:fixed; top:0; z-index:1000;
-            border-bottom:5px solid var(--secondary-color); 
-            transition:0.5s; 
-            backdrop-filter:blur(15px);
-        }
-        .logo {
-            font-size:36px; font-weight:900;
-            color:var(--primary-color);
-            display:flex; align-items:center;
-            transition:.4s;
-        }
-        .logo i {font-size:40px; margin-left:12px; color:var(--accent-color);}
+        /* ==================================== */
+        /* 2. HEADER - الوكالة والملاحة */
+        /* ==================================== */
+        header {
+            width:100%; padding:25px 50px;
+            background:rgba(255,255,255,0.98); 
+            display:flex; justify-content:space-between;
+            align-items:center; position:fixed; top:0; z-index:1000;
+            border-bottom:5px solid var(--secondary-color); 
+            transition:0.5s; 
+            backdrop-filter:blur(15px);
+        }
+        .logo {
+            font-size:36px; font-weight:900;
+            color:var(--primary-color);
+            display:flex; align-items:center;
+            transition:.4s;
+        }
+        .logo i {font-size:40px; margin-left:12px; color:var(--accent-color);}
 
-        nav a {
-            margin-left:40px; color:var(--text-light); font-size:18px; 
-            transition:.3s; font-weight:600; position:relative;
-            padding:5px 0;
-        }
-        nav a::after {
-            content:''; position:absolute; bottom:-8px; right:0;
-            width:0; height:4px; background:var(--secondary-color);
-            transition:width .3s ease-out; border-radius:2px;
-        }
-        nav a:hover::after {width:100%;}
-        nav a.active::after {width:100%; background:var(--primary-color);}
-
-
-        /* DARK MODE BUTTON */
-        #darkBtn {
-            font-size:24px; 
-            background:var(--accent-color); color:white;
-            border:none; border-radius:50%; cursor:pointer; 
-            transition:.4s; width:50px; height:50px;
-            display:flex; justify-content:center; align-items:center;
-            box-shadow:0 0 15px rgba(102, 16, 242, 0.4);
-        }
-        body.dark #darkBtn {background:var(--secondary-color); color:var(--dark-bg); box-shadow:0 0 15px rgba(23, 162, 184, 0.5);}
-        #darkBtn:hover {transform:scale(1.05);}
-
-        /* HAMBURGER MENU (للموبايل) */
-        #menuToggle {display:none; cursor:pointer;}
-        #menuToggle i {font-size:30px; color:var(--primary-color);}
-
-        /* ==================================== */
-        /* 3. HERO - القسم الرئيسي */
-        /* ==================================== */
-        .hero {
-            padding:200px 50px 120px;
-            display:flex; justify-content:space-between; 
-            align-items:center; background:var(--light-bg);
-            max-width:1400px; margin:0 auto;
-        }
-        .hero-text {width:55%; animation:fadeInUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;}
-        .hero-text h1 {font-size:72px; margin-bottom:30px; line-height:1.1; font-weight:900;}
-        .hero-text span {color:var(--secondary-color); display:block; font-size:24px; font-weight:700; margin-bottom:15px;}
-        .hero-text p {font-size:22px; margin-bottom:60px; color:#555;}
-        body.dark .hero-text p {color:#bbb;}
-        
-        .hero-img {
-            width:40%; 
-            border-radius:25px; overflow:hidden;
-            box-shadow:0 30px 60px rgba(0,0,0,0.4); 
-            animation:scaleIn 1.5s cubic-bezier(0.2, 0.8, 0.2, 1);
-        }
-        .hero-img img {width:100%; height:auto; display:block;}
-        
-        @keyframes fadeInUp {from{opacity:0; transform:translateY(50px);} to{opacity:1; transform:translateY(0);} }
-        @keyframes scaleIn {from{opacity:0; transform:scale(0.9);} to{opacity:1; transform:scale(1);} }
+        nav a {
+            margin-left:40px; color:var(--text-light); font-size:18px; 
+            transition:.3s; font-weight:600; position:relative;
+            padding:5px 0;
+        }
+        nav a::after {
+            content:''; position:absolute; bottom:-8px; right:0;
+            width:0; height:4px; background:var(--secondary-color);
+            transition:width .3s ease-out; border-radius:2px;
+        }
+        nav a:hover::after {width:100%;}
+        nav a.active::after {width:100%; background:var(--primary-color);}
 
 
-        /* ==================================== */
-        /* 4. SERVICES - الخدمات (تخصص وتعديل النصوص) */
-        /* ==================================== */
-        .services {padding:120px 50px; background:#f0f4f8;}
-        body.dark .services {background:#151515;}
-        
-        .services-grid {
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(350px,1fr)); /* تصميم عريض للخدمات */
-            gap:40px; max-width:1300px; margin:auto;
-        }
-        .service-card {
-            background:var(--light-bg); border-radius:20px; padding:40px;
-            box-shadow:0 10px 30px rgba(0,0,0,0.1); 
-            transition:.4s; cursor:pointer;
-            text-align:center;
-            border-bottom:5px solid var(--primary-color);
-        }
-        .service-card:hover {transform:translateY(-15px); box-shadow:0 20px 50px rgba(0,0,0,0.2);}
-        .service-card i {
-            font-size:55px; color:var(--accent-color); 
-            margin-bottom:25px;
-        }
-        .service-card h3 {font-size:28px; margin-bottom:15px; font-weight:800; color:var(--primary-color);}
-        .service-card p {font-size:18px; color:#555;}
-        body.dark .service-card {border-bottom-color:var(--secondary-color);}
+        /* DARK MODE BUTTON */
+        #darkBtn {
+            font-size:24px; 
+            background:var(--accent-color); color:white;
+            border:none; border-radius:50%; cursor:pointer; 
+            transition:.4s; width:50px; height:50px;
+            display:flex; justify-content:center; align-items:center;
+            box-shadow:0 0 15px rgba(102, 16, 242, 0.4);
+        }
+        body.dark #darkBtn {background:var(--secondary-color); color:var(--dark-bg); box-shadow:0 0 15px rgba(23, 162, 184, 0.5);}
+        #darkBtn:hover {transform:scale(1.05);}
+
+        /* HAMBURGER MENU (للموبايل) */
+        #menuToggle {display:none; cursor:pointer;}
+        #menuToggle i {font-size:30px; color:var(--primary-color);}
+
+        /* ==================================== */
+        /* 3. HERO - القسم الرئيسي */
+        /* ==================================== */
+        .hero {
+            padding:200px 50px 120px;
+            display:flex; justify-content:space-between; 
+            align-items:center; background:var(--light-bg);
+            max-width:1400px; margin:0 auto;
+        }
+        .hero-text {width:55%; animation:fadeInUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;}
+        .hero-text h1 {font-size:72px; margin-bottom:30px; line-height:1.1; font-weight:900;}
+        .hero-text span {color:var(--secondary-color); display:block; font-size:24px; font-weight:700; margin-bottom:15px;}
+        .hero-text p {font-size:22px; margin-bottom:60px; color:#555;}
+        body.dark .hero-text p {color:#bbb;}
+        
+        .hero-img {
+            width:40%; 
+            border-radius:25px; overflow:hidden;
+            box-shadow:0 30px 60px rgba(0,0,0,0.4); 
+            animation:scaleIn 1.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        .hero-img img {width:100%; height:auto; display:block;}
+        
+        @keyframes fadeInUp {from{opacity:0; transform:translateY(50px);} to{opacity:1; transform:translateY(0);} }
+        @keyframes scaleIn {from{opacity:0; transform:scale(0.9);} to{opacity:1; transform:scale(1);} }
 
 
-        /* ==================================== */
-        /* 5. PORTFOLIO - تقارير الأعمال (نموذج جديد) */
-        /* ==================================== */
-        .portfolio {padding:120px 50px;}
-        .portfolio-grid {
-            display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); 
-            gap:40px; max-width:1300px; margin:auto;
-        }
-        .work-card {
-            background:white; border-radius:15px; overflow:hidden;
-            box-shadow:0 5px 20px rgba(0,0,0,0.1); 
-            transition:.4s; cursor:pointer; position:relative;
-        }
-        .work-card:hover {transform:scale(1.03);}
-        .work-card img {width:100%; height:350px; object-fit:cover; display:block;}
-        .work-overlay {
-            position:absolute; top:0; left:0; right:0; bottom:0;
-            background:rgba(13, 109, 253, 0.9); /* تراكب أزرق عميق */
-            color:white; display:flex; flex-direction:column;
-            justify-content:center; align-items:center;
-            opacity:0; transition:.4s;
-            padding:20px;
-        }
-        .work-card:hover .work-overlay {opacity:1;}
-        .work-overlay h4 {font-size:26px; margin-bottom:8px; font-weight:800;}
-        .work-overlay p {font-size:18px;}
-        
-        /* LIGHTBOX */
-        #viewer {
-            position:fixed; top:0; left:0; width:100%; height:100%;
-            background:rgba(0,0,0,0.95); display:none; justify-content:center;
-            align-items:center; z-index:5000;
-        }
-        #viewer img {max-width:90%; max-height:90%; border-radius:20px; box-shadow:0 0 50px rgba(255,255,255,0.2);}
+        /* ==================================== */
+        /* 4. SERVICES - الخدمات (تخصص وتعديل النصوص) */
+        /* ==================================== */
+        .services {padding:120px 50px; background:#f0f4f8;}
+        body.dark .services {background:#151515;}
+        
+        .services-grid {
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(350px,1fr)); /* تصميم عريض للخدمات */
+            gap:40px; max-width:1300px; margin:auto;
+        }
+        .service-card {
+            background:var(--light-bg); border-radius:20px; padding:40px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.1); 
+            transition:.4s; cursor:pointer;
+            text-align:center;
+            border-bottom:5px solid var(--primary-color);
+        }
+        .service-card:hover {transform:translateY(-15px); box-shadow:0 20px 50px rgba(0,0,0,0.2);}
+        .service-card i {
+            font-size:55px; color:var(--accent-color); 
+            margin-bottom:25px;
+        }
+        .service-card h3 {font-size:28px; margin-bottom:15px; font-weight:800; color:var(--primary-color);}
+        .service-card p {font-size:18px; color:#555;}
+        body.dark .service-card {border-bottom-color:var(--secondary-color);}
 
 
-        /* ==================================== */
-        /* 6. ABOUT - عن الوكالة (تعديل النصوص) */
-        /* ==================================== */
-        .about {background:var(--secondary-color); color:white; transition:0.6s;}
-        .about h2 {color:white;}
-        .about-content {
-            max-width:1000px; 
-            margin:auto; 
-            text-align:center; 
-            font-size:22px; 
-            font-weight:600;
-            line-height:1.8;
-        }
+        /* ==================================== */
+        /* 5. PORTFOLIO - تقارير الأعمال (نموذج جديد) */
+        /* ==================================== */
+        .portfolio {padding:120px 50px;}
+        .portfolio-grid {
+            display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); 
+            gap:40px; max-width:1300px; margin:auto;
+        }
+        .work-card {
+            background:white; border-radius:15px; overflow:hidden;
+            box-shadow:0 5px 20px rgba(0,0,0,0.1); 
+            transition:.4s; cursor:pointer; position:relative;
+        }
+        .work-card:hover {transform:scale(1.03);}
+        .work-card img {width:100%; height:350px; object-fit:cover; display:block;}
+        .work-overlay {
+            position:absolute; top:0; left:0; right:0; bottom:0;
+            background:rgba(13, 109, 253, 0.9); /* تراكب أزرق عميق */
+            color:white; display:flex; flex-direction:column;
+            justify-content:center; align-items:center;
+            opacity:0; transition:.4s;
+            padding:20px;
+        }
+        .work-card:hover .work-overlay {opacity:1;}
+        .work-overlay h4 {font-size:26px; margin-bottom:8px; font-weight:800;}
+        .work-overlay p {font-size:18px;}
+        
+        /* LIGHTBOX */
+        #viewer {
+            position:fixed; top:0; left:0; width:100%; height:100%;
+            background:rgba(0,0,0,0.95); display:none; justify-content:center;
+            align-items:center; z-index:5000;
+        }
+        #viewer img {max-width:90%; max-height:90%; border-radius:20px; box-shadow:0 0 50px rgba(255,255,255,0.2);}
 
 
-        /* ==================================== */
-        /* 7. CONTACT - التواصل (حذف الفورم وإبقاء البيانات) */
-        /* ==================================== */
-        .contact {padding:120px 50px;}
-        .contact-container {
-            max-width:800px; margin:auto; 
-            display:flex; flex-direction:column; /* تخطيط عمودي للتواصل */
-            gap:40px; 
-            align-items:center;
-            padding:30px;
-            border:2px dashed var(--secondary-color);
-            border-radius:20px;
-        }
-        .contact-info {
-            width:100%; 
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:30px;
-            text-align:center;
-        }
-        .contact-info-item {margin-bottom:0; display:flex; flex-direction:column; align-items:center;}
-        .contact-info-item i {
-            font-size:36px; color:var(--primary-color); 
-            margin-bottom:10px;
-        }
-        body.dark .contact-info-item i {color:var(--secondary-color);}
-
-        .contact-info-item div {margin:0;}
-        .contact-info-item p {font-size:20px; margin:5px 0 2px; font-weight:700;}
-        .contact-info-item span {display:block; font-size:16px; color:#555;}
-        .contact-info-item a {color:#555; transition:.3s;}
-        .contact-info-item a:hover {color:var(--primary-color);}
-        body.dark .contact-info-item a {color:#ccc;}
-        body.dark .contact-info-item a:hover {color:var(--secondary-color);}
-
-        .contact form {display:none;} /* إخفاء الفورم بالكامل حسب الطلب */
+        /* ==================================== */
+        /* 6. ABOUT - عن الوكالة (تعديل النصوص) */
+        /* ==================================== */
+        .about {background:var(--secondary-color); color:white; transition:0.6s;}
+        .about h2 {color:white;}
+        .about-content {
+            max-width:1000px; 
+            margin:auto; 
+            text-align:center; 
+            font-size:22px; 
+            font-weight:600;
+            line-height:1.8;
+        }
 
 
-        /* ==================================== */
-        /* 8. FOOTER & COUNTER */
-        /* ==================================== */
-        footer {
-            padding:30px 50px; 
-            background:var(--light-bg); 
-            border-top:1px solid #ddd;
-            display:flex; justify-content:space-between; align-items:center;
-        }
-        footer p {font-size:16px;}
-        .visitor-counter {
-            font-size:17px; 
-            color:#777;
-            display:flex;
-            align-items:center;
-            font-weight:600;
-        }
-        .visitor-counter span {
-            font-weight:900;
-            color:var(--primary-color);
-            font-size:22px;
-            margin:0 8px;
-        }
+        /* ==================================== */
+        /* 7. CONTACT - التواصل (حذف الفورم وإبقاء البيانات) */
+        /* ==================================== */
+        .contact {padding:120px 50px;}
+        .contact-container {
+            max-width:800px; margin:auto; 
+            display:flex; flex-direction:column; /* تخطيط عمودي للتواصل */
+            gap:40px; 
+            align-items:center;
+            padding:30px;
+            border:2px dashed var(--secondary-color);
+            border-radius:20px;
+        }
+        .contact-info {
+            width:100%; 
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+            text-align:center;
+        }
+        .contact-info-item {margin-bottom:0; display:flex; flex-direction:column; align-items:center;}
+        .contact-info-item i {
+            font-size:36px; color:var(--primary-color); 
+            margin-bottom:10px;
+        }
+        body.dark .contact-info-item i {color:var(--secondary-color);}
+
+        .contact-info-item div {margin:0;}
+        .contact-info-item p {font-size:20px; margin:5px 0 2px; font-weight:700;}
+        .contact-info-item span {display:block; font-size:16px; color:#555;}
+        .contact-info-item a {color:#555; transition:.3s;}
+        .contact-info-item a:hover {color:var(--primary-color);}
+        body.dark .contact-info-item a {color:#ccc;}
+        body.dark .contact-info-item a:hover {color:var(--secondary-color);}
+
+        .contact form {display:none;} /* إخفاء الفورم بالكامل حسب الطلب */
 
 
-        /* ==================================== */
-        /* 9. MEDIA QUERIES - التجاوب مع الأجهزة */
-        /* ==================================== */
-        @media (max-width: 992px) {
-            header {padding:20px 30px;}
-            .hero {flex-direction:column; text-align:center; padding-top:160px;}
-            .hero-text {width:100%; margin-bottom:50px;}
-            .hero-text h1 {font-size:56px;}
-            .hero-text a {display:block; width:80%; margin:20px auto;}
-            .btn-secondary {margin-left:0; margin-top:20px;}
-            .hero-img {width:90%;}
-            
-            h2 {font-size:44px;}
-            section {padding:80px 30px;}
-            .services-grid, .portfolio-grid {grid-template-columns:1fr;} /* عمود واحد في التابلت */
-            .contact-info {grid-template-columns:repeat(auto-fit,minmax(180px,1fr));}
-            footer {flex-direction:column-reverse; gap:15px;}
-        }
+        /* ==================================== */
+        /* 8. FOOTER & COUNTER */
+        /* ==================================== */
+        footer {
+            padding:30px 50px; 
+            background:var(--light-bg); 
+            border-top:1px solid #ddd;
+            display:flex; justify-content:space-between; align-items:center;
+        }
+        footer p {font-size:16px;}
+        .visitor-counter {
+            font-size:17px; 
+            color:#777;
+            display:flex;
+            align-items:center;
+            font-weight:600;
+        }
+        .visitor-counter span {
+            font-weight:900;
+            color:var(--primary-color);
+            font-size:22px;
+            margin:0 8px;
+        }
 
-        @media (max-width: 600px) {
-            header {padding:15px 20px;}
-            nav {
-                position:fixed; top:80px; left:0; right:0;
-                background:var(--light-bg); 
-                flex-direction:column; 
-                padding:20px 0;
-                transform:translateX(100%); 
-            }
-            body.dark nav {background:#222;}
-            nav.open {transform:translateX(0);}
-            nav a {margin:15px 0; display:block; font-size:18px;}
-            
-            #darkBtn {width:45px; height:45px; font-size:22px;}
-            #menuToggle {display:block; order:-1; margin-left:15px;}
 
-            .hero {padding-top:120px;}
-            .hero-text h1 {font-size:40px;}
-            .hero-text span {font-size:20px;}
-            .hero-text p {font-size:18px; margin-bottom:40px;}
-            .btn-primary, .btn-secondary {width:100%;}
-            
-            h2 {font-size:36px;}
-            .about-content {font-size:18px;}
-            .contact-container {padding:20px;}
-        }
-    </style>
+        /* ==================================== */
+        /* 9. MEDIA QUERIES - التجاوب مع الأجهزة */
+        /* ==================================== */
+        @media (max-width: 992px) {
+            header {padding:20px 30px;}
+            .hero {flex-direction:column; text-align:center; padding-top:160px;}
+            .hero-text {width:100%; margin-bottom:50px;}
+            .hero-text h1 {font-size:56px;}
+            .hero-text a {display:block; width:80%; margin:20px auto;}
+            .btn-secondary {margin-left:0; margin-top:20px;}
+            .hero-img {width:90%;}
+            
+            h2 {font-size:44px;}
+            section {padding:80px 30px;}
+            .services-grid, .portfolio-grid {grid-template-columns:1fr;} /* عمود واحد في التابلت */
+            .contact-info {grid-template-columns:repeat(auto-fit,minmax(180px,1fr));}
+            footer {flex-direction:column-reverse; gap:15px;}
+        }
+
+        @media (max-width: 600px) {
+            header {padding:15px 20px;}
+            nav {
+                position:fixed; top:80px; left:0; right:0;
+                background:var(--light-bg); 
+                flex-direction:column; 
+                padding:20px 0;
+                transform:translateX(100%); 
+            }
+            body.dark nav {background:#222;}
+            nav.open {transform:translateX(0);}
+            nav a {margin:15px 0; display:block; font-size:18px;}
+            
+            #darkBtn {width:45px; height:45px; font-size:22px;}
+            #menuToggle {display:block; order:-1; margin-left:15px;}
+
+            .hero {padding-top:120px;}
+            .hero-text h1 {font-size:40px;}
+            .hero-text span {font-size:20px;}
+            .hero-text p {font-size:18px; margin-bottom:40px;}
+            .btn-primary, .btn-secondary {width:100%;}
+            
+            h2 {font-size:36px;}
+            .about-content {font-size:18px;}
+            .contact-container {padding:20px;}
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <i class="fas fa-gem"></i>
-            وكالة أحمد للتصميم
-        </div>
-        
-        <button id="menuToggle">
-            <i class="fas fa-bars"></i>
-        </button>
+    <header>
+        <div class="logo">
+            <i class="fas fa-gem"></i>
+            وكالة أحمد للتصميم
+        </div>
+        
+        <button id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
 
-        <nav id="mainNav">
-            <a href="#hero" class="active">الرئيسية</a>
-            <a href="#services">خدماتنا</a>
-            <a href="#portfolio">الأعمال والتقارير</a>
-            <a href="#about">عن الوكالة</a>
-            <a href="#contact">تواصل</a>
-        </nav>
-        
-        <button id="darkBtn" title="الوضع الداكن/المضيء">
-            <i class="fas fa-moon"></i>
-        </button>
-    </header>
-
-
-    <section class="hero" id="hero">
-        <div class="hero-text">
-            <span>وكالة متخصصة في الهوية والإعلانات</span>
-            <h1>تصاميم **خالدة** ترفع مستوى علامتك التجارية.</h1>
-            <p>نحن وكالة أحمد للتصميم، نقدم حلولاً إبداعية فائقة الجودة لشركتك، نركز على الدقة في التنفيذ والاحترافية في التعامل.</p>
-            <a href="#contact" class="btn-primary">
-                <i class="fas fa-envelope-open-text"></i> &nbsp; تواصل مباشرة
-            </a>
-            <button class="btn-secondary" onclick="document.querySelector('#portfolio').scrollIntoView({behavior:'smooth'})">
-                <i class="fas fa-layer-group"></i> &nbsp; تصفح الأعمال
-            </button>
-        </div>
-
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=1600" alt="عمل تصميم ذو جودة" />
-        </div>
-    </section>
+        <nav id="mainNav">
+            <a href="#hero" class="active">الرئيسية</a>
+            <a href="#services">خدماتنا</a>
+            <a href="#portfolio">الأعمال والتقارير</a>
+            <a href="#about">عن الوكالة</a>
+            <a href="#contact">تواصل</a>
+        </nav>
+        
+        <button id="darkBtn" title="الوضع الداكن/المضيء">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
 
 
-    <section class="services" id="services">
-        <h2>خدماتنا</h2>
-        <p class="section-subtitle">حلول تصميم دقيقة ومصممة خصيصاً لتحقيق أهدافك التسويقية.</p>
+    <section class="hero" id="hero">
+        <div class="hero-text">
+            <span>وكالة متخصصة في الهوية والإعلانات</span>
+            <h1>تصاميم **خالدة** ترفع مستوى علامتك التجارية.</h1>
+            <p>نحن وكالة أحمد للتصميم، نقدم حلولاً إبداعية فائقة الجودة لشركتك، نركز على الدقة في التنفيذ والاحترافية في التعامل.</p>
+            <a href="#contact" class="btn-primary">
+                <i class="fas fa-envelope-open-text"></i> &nbsp; تواصل مباشرة
+            </a>
+            <button class="btn-secondary" onclick="document.querySelector('#portfolio').scrollIntoView({behavior:'smooth'})">
+                <i class="fas fa-layer-group"></i> &nbsp; تصفح الأعمال
+            </button>
+        </div>
 
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-puzzle-piece"></i>
-                <h3>بناء الهوية والشعارات</h3>
-                <p>بناء شعارات وهويات بصرية كاملة تروي قصة علامتك التجارية بدقة وتميز **بإذن الله**.</p>
-            </div>
-
-             <div class="service-card">
-                <i class="fas fa-bullhorn"></i>
-                <h3>إعلانات السوشيال ميديا القوية</h3>
-                <p>إعلانات قوية لمنصات السوشيال ميديا والتسويق **مع ضمان حق الاعتراض** لو كان وجد خطأ في التصميم.</p>
-            </div>
-            
-            <div class="service-card">
-                <i class="fas fa-file-invoice"></i>
-                <h3>تصميم واجهات التقارير</h3>
-                <p>تصميم واجهات تقارير على حسب المطلوب.</p>
-            </div>
-        </div>
-    </section>
+        <div class="hero-img">
+            <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=1600" alt="عمل تصميم ذو جودة" />
+        </div>
+    </section>
 
 
-    <section class="portfolio" id="portfolio">
-        <h2>أعمالنا ونماذج تقارير</h2>
-        <p class="section-subtitle">شاهد عينة من تصاميمنا ذات الجودة.</p>
-        
-        <div class="portfolio-grid">
-            <div class="work-card" onclick="openViewer('file:///C:/Users/aa127/OneDrive/%D8%B3%D8%B7%D8%AD%20%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8/photo_%D9%A2%D9%A0%D9%A2%D9%A5-%D9%A1%D9%A1-%D9%A1%D9%A5_%D9%A1%D9%A3-%D9%A0%D9%A2-%D9%A4%D9%A8.jpg')">
-                <img src="file:///C:/Users/aa127/OneDrive/%D8%B3%D8%B7%D8%AD%20%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8/photo_%D9%A2%D9%A0%D9%A2%D9%A5-%D9%A1%D9%A1-%D9%A1%D9%A5_%D9%A1%D9%A3-%D9%A0%D9%A2-%D9%A4%D9%A8.jpg" alt="نموذج تقرير جامعة البصرة - Francis Turbine">
-                <div class="work-overlay">
-                    <h4>تصميم تقرير جامعي (نموذج)</h4>
-                    <p>هيكل وتنسيق تقرير أكاديمي احترافي.</p>
-                </div>
-            </div>
+    <section class="services" id="services">
+        <h2>خدماتنا</h2>
+        <p class="section-subtitle">حلول تصميم دقيقة ومصممة خصيصاً لتحقيق أهدافك التسويقية.</p>
 
-            <div class="work-card" onclick="openViewer('file:///C:/Users/aa127/OneDrive/%D8%B3%D8%B7%D8%AD%20%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8/%D8%AA%D8%B5%D9%85%D9%8A%D9%85/Gemini_Generated_Image_iersvniersvniers.png')">
-                <img src="file:///C:/Users/aa127/OneDrive/%D8%B3%D8%B7%D8%AD%20%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8/%D8%AA%D8%B5%D9%85%D9%8A%D9%85/Gemini_Generated_Image_iersvniersvniers.png" alt="شعار تصميم حديث">
-                <div class="work-overlay">
-                    <h4>هوية شركة لوجستية</h4>
-                    <p>إعادة تصميم شاملة للشعار والألوان المعتمدة.</p>
-                </div>
-            </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-puzzle-piece"></i>
+                <h3>بناء الهوية والشعارات</h3>
+                <p>بناء شعارات وهويات بصرية كاملة تروي قصة علامتك التجارية بدقة وتميز **بإذن الله**.</p>
+            </div>
 
-             <div class="work-card" onclick="openViewer('file:///C:/Users/aa127/Downloads/Gemini_Generated_Image_6mhj9f6mhj9f6mhj.png')">
-                <img src="file:///C:/Users/aa127/Downloads/Gemini_Generated_Image_6mhj9f6mhj9f6mhj.png" alt="إعلان تسويقي">
-                <div class="work-overlay">
-                    <h4>إعلان مرئي متفاعل</h4>
-                    <p>تصميم إعلان لمنصة تجارة إلكترونية، يركز على جاذبية المنتج.</p>
-                </div>
-            </div>
-            
-        </div>
-    </section>
+             <div class="service-card">
+                <i class="fas fa-bullhorn"></i>
+                <h3>إعلانات السوشيال ميديا القوية</h3>
+                <p>إعلانات قوية لمنصات السوشيال ميديا والتسويق **مع ضمان حق الاعتراض** لو كان وجد خطأ في التصميم.</p>
+            </div>
+            
+            <div class="service-card">
+                <i class="fas fa-file-invoice"></i>
+                <h3>تصميم واجهات التقارير</h3>
+                <p>تصميم واجهات تقارير على حسب المطلوب.</p>
+            </div>
+        </div>
+    </section>
 
 
-    <section class="about" id="about">
-        <h2>عن وكالة أحمد للتصميم</h2>
-        <div class="about-content">
-            <p>أنا أحمد، مصمم فوتوغرافي متحمس لتقديم حلول بصرية فريدة. أعمل في مجال الإعلانات، الشعارات، والتصوير الفوتوغرافي. أقدّم أعمال ذات جودة للعملاء والعلامات التجارية وأهتم بالتفاصيل لضمان تحقيق رؤية العميل ان شاء الله.</p>
-        </div>
-    </section>
+    <section class="portfolio" id="portfolio">
+        <h2>أعمالنا ونماذج تقارير</h2>
+        <p class="section-subtitle">شاهد عينة من تصاميمنا ذات الجودة.</p>
+        
+        <div class="portfolio-grid">
+                        <div class="work-card" onclick="openViewer('images/report-cover.jpg')">
+                <img src="images/report-cover.jpg" alt="نموذج تقرير جامعة البصرة - Francis Turbine">
+                <div class="work-overlay">
+                    <h4>تصميم تقرير جامعي (نموذج)</h4>
+                    <p>هيكل وتنسيق تقرير أكاديمي احترافي.</p>
+                </div>
+            </div>
+
+                        <div class="work-card" onclick="openViewer('images/logo.png')">
+                <img src="images/logo.png" alt="شعار تصميم حديث">
+                <div class="work-overlay">
+                    <h4>هوية شركة لوجستية</h4>
+                    <p>إعادة تصميم شاملة للشعار والألوان المعتمدة.</p>
+                </div>
+            </div>
+
+                        <div class="work-card" onclick="openViewer('images/ad-marketing.png')">
+                <img src="images/ad-marketing.png" alt="إعلان تسويقي">
+                <div class="work-overlay">
+                    <h4>إعلان مرئي متفاعل</h4>
+                    <p>تصميم إعلان لمنصة تجارة إلكترونية، يركز على جاذبية المنتج.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 
 
-    <section class="contact" id="contact">
-        <h2>تواصل معنا مباشرة</h2>
-        <p class="section-subtitle">اختر وسيلة التواصل المناسبة لتبدأ مشروعك القادم على الفور.</p>
-
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <p>موقع الوكالة</p>
-                        <span>العراق - البصرة</span>
-                    </div>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    <div>
-                        <p>رقم الهاتف</p>
-                        <a href="tel:+9647725754850">07725754850</a>
-                    </div>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <p>البريد الإلكتروني</p>
-                        <a href="mailto:aaa1270697@gmail.com">aaa1270697@gmail.com</a>
-                    </div>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fab fa-telegram-plane"></i>
-                    <div>
-                        <p>تليجرام للتواصل</p>
-                        <a href="https://t.me/AHMEDD2024" target="_blank">@AHMEDD2024</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
+    <section class="about" id="about">
+        <h2>عن وكالة أحمد للتصميم</h2>
+        <div class="about-content">
+            <p>أنا أحمد، مصمم فوتوغرافي متحمس لتقديم حلول بصرية فريدة. أعمل في مجال الإعلانات، الشعارات، والتصوير الفوتوغرافي. أقدّم أعمال ذات جودة للعملاء والعلامات التجارية وأهتم بالتفاصيل لضمان تحقيق رؤية العميل ان شاء الله.</p>
+        </div>
+    </section>
 
 
-    <footer>
-        <p>© 2025 — وكالة أحمد للتصميم. جميع الحقوق محفوظة.</p>
-        <div class="visitor-counter">
-            <i class="fas fa-globe-americas"></i>
-            &nbsp; أنت الزائر رقم: <span id="localVisitorCount">0</span>
-        </div>
-    </footer>
+    <section class="contact" id="contact">
+        <h2>تواصل معنا مباشرة</h2>
+        <p class="section-subtitle">اختر وسيلة التواصل المناسبة لتبدأ مشروعك القادم على الفور.</p>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <p>موقع الوكالة</p>
+                        <span>العراق - البصرة</span>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <div>
+                        <p>رقم الهاتف</p>
+                        <a href="tel:+9647725754850">07725754850</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p>البريد الإلكتروني</p>
+                        <a href="mailto:aaa1270697@gmail.com">aaa1270697@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fab fa-telegram-plane"></i>
+                    <div>
+                        <p>تليجرام للتواصل</p>
+                        <a href="https://t.me/AHMEDD2024" target="_blank">@AHMEDD2024</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
 
 
-    <div id="viewer" onclick="closeViewer()">
-        <img id="viewerImg" src="">
-    </div>
+    <footer>
+        <p>© 2025 — وكالة أحمد للتصميم. جميع الحقوق محفوظة.</p>
+        <div class="visitor-counter">
+            <i class="fas fa-globe-americas"></i>
+            &nbsp; أنت الزائر رقم: <span id="localVisitorCount">0</span>
+        </div>
+    </footer>
+
+
+    <div id="viewer" onclick="closeViewer()">
+        <img id="viewerImg" src="">
+    </div>
 
 
 <script>
-    // ===================================
-    // JS - وظائف الموقع الرئيسية (محدثة)
-    // ===================================
+    // ===================================
+    // JS - وظائف الموقع الرئيسية (محدثة)
+    // ===================================
 
-    // LIGHTBOX
-    function openViewer(src) {
-        document.getElementById('viewerImg').src = src;
-        document.getElementById('viewer').style.display = 'flex';
-    }
-    function closeViewer() {
-        document.getElementById('viewer').style.display = 'none';
-    }
+    // LIGHTBOX
+    function openViewer(src) {
+        document.getElementById('viewerImg').src = src;
+        document.getElementById('viewer').style.display = 'flex';
+    }
+    function closeViewer() {
+        document.getElementById('viewer').style.display = 'none';
+    }
 
-    // DARK MODE (مع تحديث الأيقونة والتخزين)
-    document.getElementById('darkBtn').onclick = () => {
-        document.body.classList.toggle('dark');
-        const isDark = document.body.classList.contains('dark');
-        const icon = document.querySelector('#darkBtn i');
-        
-        if (isDark) {
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
-            localStorage.setItem('theme', 'light');
-        }
-    };
+    // DARK MODE (مع تحديث الأيقونة والتخزين)
+    document.getElementById('darkBtn').onclick = () => {
+        document.body.classList.toggle('dark');
+        const isDark = document.body.classList.contains('dark');
+        const icon = document.querySelector('#darkBtn i');
+        
+        if (isDark) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+            localStorage.setItem('theme', 'light');
+        }
+    };
 
-    // تحميل الوضع المفضل وتفعيل العداد
-    window.onload = () => {
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.classList.add('dark');
-            document.querySelector('#darkBtn i').classList.remove('fa-moon');
-            document.querySelector('#darkBtn i').classList.add('fa-sun');
-        }
-        
-        // تفعيل عداد الزوار عند التحميل
-        let count = localStorage.getItem('visitorCount') ? parseInt(localStorage.getItem('visitorCount')) : 0;
-        count++;
-        localStorage.setItem('visitorCount', count);
-        document.getElementById('localVisitorCount').textContent = count.toLocaleString('ar');
-    };
+    // تحميل الوضع المفضل وتفعيل العداد
+    window.onload = () => {
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+            document.querySelector('#darkBtn i').classList.remove('fa-moon');
+            document.querySelector('#darkBtn i').classList.add('fa-sun');
+        }
+        
+        // تفعيل عداد الزوار عند التحميل
+        let count = localStorage.getItem('visitorCount') ? parseInt(localStorage.getItem('visitorCount')) : 0;
+        count++;
+        localStorage.setItem('visitorCount', count);
+        document.getElementById('localVisitorCount').textContent = count.toLocaleString('ar');
+    };
 
 
-    // RESPONSIVE NAVIGATION (قائمة الهامبرغر)
-    document.getElementById('menuToggle').onclick = () => {
-        document.getElementById('mainNav').classList.toggle('open');
-        const icon = document.querySelector('#menuToggle i');
-        if (document.getElementById('mainNav').classList.contains('open')) {
-             icon.classList.remove('fa-bars');
-             icon.classList.add('fa-times');
-        } else {
-             icon.classList.remove('fa-times');
-             icon.classList.add('fa-bars');
-        }
-    };
-    // إغلاق القائمة عند النقر على رابط (للموبايل)
-    document.querySelectorAll('#mainNav a').forEach(item => {
-        item.addEventListener('click', () => {
-            document.getElementById('mainNav').classList.remove('open');
-            document.querySelector('#menuToggle i').classList.remove('fa-times');
-            document.querySelector('#menuToggle i').classList.add('fa-bars');
-        });
-    });
+    // RESPONSIVE NAVIGATION (قائمة الهامبرغر)
+    document.getElementById('menuToggle').onclick = () => {
+        document.getElementById('mainNav').classList.toggle('open');
+        const icon = document.querySelector('#menuToggle i');
+        if (document.getElementById('mainNav').classList.contains('open')) {
+             icon.classList.remove('fa-bars');
+             icon.classList.add('fa-times');
+        } else {
+             icon.classList.remove('fa-times');
+             icon.classList.add('fa-bars');
+        }
+    };
+    // إغلاق القائمة عند النقر على رابط (للموبايل)
+    document.querySelectorAll('#mainNav a').forEach(item => {
+        item.addEventListener('click', () => {
+            document.getElementById('mainNav').classList.remove('open');
+            document.querySelector('#menuToggle i').classList.remove('fa-times');
+            document.querySelector('#menuToggle i').classList.add('fa-bars');
+        });
+    });
 
-    // إضافة تأثير شريط الملاحة النشط
-    const sections = document.querySelectorAll('section');
-    const navLi = document.querySelectorAll('nav a');
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 150; // زيادة الإزاحة
-            if (scrollY >= sectionTop) {
-                current = section.getAttribute('id');
-            }
-        });
+    // إضافة تأثير شريط الملاحة النشط
+    const sections = document.querySelectorAll('section');
+    const navLi = document.querySelectorAll('nav a');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 150; // زيادة الإزاحة
+            if (scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
 
-        navLi.forEach(a => {
-            a.classList.remove('active');
-            if (a.getAttribute('href').includes(current)) {
-                a.classList.add('active');
-            }
-        });
-    });
+        navLi.forEach(a => {
+            a.classList.remove('active');
+            if (a.getAttribute('href').includes(current)) {
+                a.classList.add('active');
+            }
+        });
+    });
 
 </script>
 
